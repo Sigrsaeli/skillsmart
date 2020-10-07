@@ -7,4 +7,6 @@ def factorial(n):
     return n*factorial(n-1)
 
 def squirrel (n):
+    if n == 0:
+        return 0
     return int(str(factorial(n=n))[0])
