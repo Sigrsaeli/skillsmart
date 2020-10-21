@@ -1,4 +1,12 @@
 
+def battalion_check (battalion_list):
+    x = battalion_list[0]
+    y = battalion_list[1]
+    for i in range(2,len(battalion_list)):
+        if (battalion_list[i] == x) and (battalion_list[i+1] == y):
+            battalion_list.pop(i)
+            battalion_list.pop(i+1)
+    return battalion_list
 
 def ConquestCampaign (N, M, L, battalion):
     days = 0
