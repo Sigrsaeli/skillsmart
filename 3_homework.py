@@ -5,6 +5,7 @@ def ConquestCampaign (N, M, L, battalion):
     for i in range(len(battalion)):
         if i % 2 == 0:
             areas[battalion[i]-1][battalion[i+1]-1] = 1
+    days += 1
     while any(0 in row for row in areas):
         for i in range(N):
             for j in range(M):
