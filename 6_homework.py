@@ -41,4 +41,9 @@ def PatternUnlock(N, hits):
         dist_len += 1
     elif (set([8,7]).issubset(hits)) or (set([7,8]).issubset(hits):
         dist_len += 1
+    dist_len = str(dist_len)
+    if '.' in dist_len:
+        dist_len = dist_len.replace('.','')
+    elif '0' in dist_len:
+        dist_len = dist_len.replace('0','')
     return dist_len
